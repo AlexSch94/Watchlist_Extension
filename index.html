@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find movies</title>
+    <link rel="shortcut icon" href="images/clapperboard.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="faded-wrapper" id="fadedWrapper"></div>
+    
+    <div class="wrapper">
+        <div class="header">
+            <h1>Find your movie</h1>
+            <a href="watchlist.html">Go To Your Watchlist -></a>
+        </div>
+        
+        <div class="UI flex">
+            <button class="prev-search btn" id="prevSearch">&larr;</button>
+
+            <div class="UI-block flex">
+                <input type="text" name="searchBar1" id="searchBar" placeholder="Search your movie" spellcheck="false" autofocus="on" onclick="this.select()">
+                <button class="search-btn btn" id="searchBtn">Search</button>
+            </div>             
+        </div>
+    
+        <div class="main" id="main">
+    
+            <div class="search-result-container" id="searchResultContainer">
+            </div>
+    
+            <div class="search-result-container" id="otherSearchResultContainer">
+            </div>
+        </div>
+    
+        <div class="placeholder" id="placeholder">
+            <h3 class="notification-header">Try searching for some movies you might like!</h3>
+            <img src="images/clapboard.png">
+        </div>
+    </div>
+    
+</body>
+</html>
